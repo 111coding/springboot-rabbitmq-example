@@ -19,7 +19,7 @@ public class OrderService {
 
     @Transactional
     public void orderProduct(Long productId, Long userId) throws Exception {
-        Product product = productRepo.findById(productId).orElseThrow();
+        Product product = productRepo.findByIdPerssimisticWrite(productId).orElseThrow();
         long count = orderRepo.countByProductId(productId);
         if (product.getQuantity().longValue() <= count) {
             throw new Exception("SOLD_OUT");
