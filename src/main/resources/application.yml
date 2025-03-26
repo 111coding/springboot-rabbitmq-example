@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ddbb?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Seoul
+    username: uusseerr
+    password: Asd123^^
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    # properties:
+    #   hibernate:
+    #     format_sql: true
+    #     show_sql: true

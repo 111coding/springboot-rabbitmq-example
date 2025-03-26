@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  mysql-jsh:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: Asd123^^
+      MYSQL_DATABASE: ddbb
+      MYSQL_USER: uusseerr
+      MYSQL_PASSWORD: Asd123^^
+    ports:
+      - "3306:3306"
